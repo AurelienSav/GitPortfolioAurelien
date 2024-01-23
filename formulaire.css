@@ -1,0 +1,115 @@
+
+  body {
+    background: #ffffff;
+    color: #111111;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  form#contacter {
+    background: rgb(253, 88, 223);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 29vw;
+  }
+  form#contacter fieldset {
+    border: none;
+    margin-bottom: 10px;
+  }
+  form#contacter fieldset:last-of-type {
+    margin-bottom: 0;
+  }
+  form#contacter legend {
+    color: rgb(124, 0, 101);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 3vw;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px rgb(255, 0, 208)#c0d576;
+  }
+  form#contacter > fieldset > legend:before {
+    content: "Étape " counter(fieldsets) " : ";
+    counter-increment: fieldsets;
+  }
+  form#contacter fieldset fieldset legend {
+    color: #111111;
+    font-size: 13px;
+    font-weight: normal;
+    padding-bottom: 0;
+  }
+  form#contacter ol li {
+    background: #b9cf6a;
+    background: rgba(255,255,255,.3);
+    border-color: #e3ebc3;
+    border-color: rgba(255,255,255,.6);
+    border-style: solid;
+    border-width: 2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    line-height: 30px;
+    list-style: none;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+  }
+  form#contacter ol ol li {
+    background: none;
+    border: none;
+    float: left;
+  }
+  form#contacter label {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+  }
+  form#contacter fieldset fieldset label {
+    background:none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    width: auto;
+  }
+  form#contacter input:not([type=radio]),
+form#contacter textarea {
+  background: #ffffff;
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  font: italic 13px Georgia, "Times New Roman", Times, serif;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+form#contacter input:not([type=submit]):focus,
+form#contacter textarea:focus {
+  background: #eaeaea;
+}
+form#contacter input[type=radio] {
+  float: left;
+  margin-right: 5px;
+}
+form#contacter button {
+    background: rgb(124, 0, 101);
+    border: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: block;
+    font: 18px Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 1vw;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #000000;
+    text-transform: uppercase;
+  }
+  form#contacter button:hover {
+    background: rgb(189, 0, 154);
+    cursor: pointer;
+  }
